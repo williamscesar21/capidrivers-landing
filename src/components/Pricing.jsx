@@ -84,7 +84,7 @@ export default function Pricing() {
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
-                href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20cerrar%20la%20propuesta%20de%20la%20app%20por%20%242%2C500."
+                href="https://wa.me/584121510662?text=Hola%20Web%20Bonding%2C%20vengo%20de%20la%20propuesta%20CAPIDRIVERS%20y%20quiero%20cerrar%20la%20app%20por%20%242%2C500."
                 target="_blank"
                 rel="noreferrer"
                 className="btn-neon flex-1 sm:flex-none"

@@ -33,11 +33,11 @@ export default function CTA() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20ver%20la%20propuesta%20de%20la%20app."
+                  href="https://wa.me/584121510662?text=Hola%20Web%20Bonding%2C%20vengo%20de%20la%20propuesta%20CAPIDRIVERS%20y%20quiero%20avanzar%20con%20la%20app."
                   target="_blank"
                   rel="noreferrer"
                   className="btn-neon"
-                  aria-label="Hablar por WhatsApp con CAPIDRIVERS"
+                  aria-label="Hablar por WhatsApp con Web Bonding"
                 >
                   <MessageCircle className="h-5 w-5" />
                   Hablemos por WhatsApp

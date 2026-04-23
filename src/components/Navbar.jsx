@@ -53,7 +53,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20conversar%20sobre%20la%20propuesta%20de%20la%20app."
+            href="https://wa.me/584121510662?text=Hola%20Web%20Bonding%2C%20vengo%20de%20la%20propuesta%20CAPIDRIVERS%20y%20quiero%20conversar%20sobre%20la%20app."
             target="_blank"
             rel="noreferrer"
             className="hidden sm:inline-flex btn-neon text-sm px-5 py-2.5"
@@ -94,7 +94,7 @@ export default function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20conversar%20sobre%20la%20propuesta%20de%20la%20app."
+                href="https://wa.me/584121510662?text=Hola%20Web%20Bonding%2C%20vengo%20de%20la%20propuesta%20CAPIDRIVERS%20y%20quiero%20conversar%20sobre%20la%20app."
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setOpen(false)}
