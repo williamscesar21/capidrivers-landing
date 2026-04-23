@@ -11,8 +11,8 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Logo size={44} />
             <p className="mt-4 max-w-sm text-sm text-capi-cream/70">
-              Propuesta comercial desarrollada por <strong className="text-capi-cream">Web Bonding C.A.</strong> para
-              digitalizar el servicio de CAPIDRIVERS en Barinas, Venezuela.
+              Propuesta comercial desarrollada por <strong className="text-capi-cream">Web Bonding C.A.</strong>,
+              agencia ubicada en Acarigua-Araure, Portuguesa, para digitalizar el servicio de CAPIDRIVERS en Barinas, Venezuela.
             </p>
             <div className="mt-5 flex gap-3">
               <a
@@ -61,6 +61,10 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-widest text-capi-neon">Web Bonding C.A.</h3>
             <ul className="mt-4 space-y-2 text-sm text-capi-cream/70">
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-capi-neon" />
+                <span>Acarigua-Araure<br />Portuguesa, Venezuela</span>
+              </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0 text-capi-neon" />
                 <a href="mailto:webbonding@rikoapp.com" className="hover:text-capi-neon">webbonding@rikoapp.com</a>
