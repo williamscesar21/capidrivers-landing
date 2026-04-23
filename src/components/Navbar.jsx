@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Sparkles } from 'lucide-react'
+import { Menu, X, MessageCircle } from 'lucide-react'
 import Logo from './Logo.jsx'
 
 const links = [
@@ -53,12 +53,14 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#contacto"
+            href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20conversar%20sobre%20la%20propuesta%20de%20la%20app."
+            target="_blank"
+            rel="noreferrer"
             className="hidden sm:inline-flex btn-neon text-sm px-5 py-2.5"
-            aria-label="Agendar demo"
+            aria-label="Contactar por WhatsApp"
           >
-            <Sparkles className="h-4 w-4" />
-            Agendar demo
+            <MessageCircle className="h-4 w-4" />
+            Contactanos
           </a>
           <button
             className="md:hidden rounded-lg p-2 text-capi-cream hover:bg-capi-neon/10"
@@ -91,8 +93,14 @@ export default function Navbar() {
               </li>
             ))}
             <li className="pt-2">
-              <a href="#contacto" onClick={() => setOpen(false)} className="btn-neon w-full">
-                <Sparkles className="h-4 w-4" /> Agendar demo
+              <a
+                href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20conversar%20sobre%20la%20propuesta%20de%20la%20app."
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpen(false)}
+                className="btn-neon w-full"
+              >
+                <MessageCircle className="h-4 w-4" /> Contactanos
               </a>
             </li>
           </ul>

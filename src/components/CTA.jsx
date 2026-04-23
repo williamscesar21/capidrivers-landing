@@ -28,7 +28,7 @@ export default function CTA() {
                 <span className="gradient-text">El capibara tambien quiere subirse.</span>
               </h2>
               <p className="mt-5 text-lg text-capi-cream/80">
-                Agenda 30 minutos sin compromiso. Te mostramos la propuesta en detalle, ejemplos reales y resolvemos todas tus dudas.
+                Conversemos sobre el alcance, tiempos y la inversion exacta para tu operacion. Sin demos ni compromisos: propuesta clara, directo al punto.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
