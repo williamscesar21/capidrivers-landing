@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-bold uppercase tracking-widest text-capi-neon">Agencia</h3>
+            <h3 className="font-display text-sm font-bold uppercase tracking-widest text-capi-neon">Web Bonding C.A.</h3>
             <ul className="mt-4 space-y-2 text-sm text-capi-cream/70">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0 text-capi-neon" />
@@ -73,6 +73,7 @@ export default function Footer() {
                 <MessageCircle className="h-4 w-4 flex-shrink-0 text-capi-neon" />
                 <a href="https://wa.me/584121510662" target="_blank" rel="noreferrer" className="hover:text-capi-neon">WhatsApp</a>
               </li>
+              <li className="text-xs pt-1 text-capi-cream/50">RIF: J-50804362-6</li>
             </ul>
           </div>
         </div>
@@ -81,7 +82,8 @@ export default function Footer() {
           <p>© {year} CAPIDRIVERS · Propuesta comercial · Todos los derechos reservados.</p>
           <p>
             Diseno y desarrollo por{' '}
-            <a href="mailto:webbonding@rikoapp.com" className="text-capi-neon hover:underline">Web Bonding</a>
+            <a href="mailto:webbonding@rikoapp.com" className="text-capi-neon hover:underline">Web Bonding C.A.</a>
+            {' · '}RIF J-50804362-6
           </p>
         </div>
       </div>
