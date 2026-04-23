@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { PenTool, Code2, FlaskConical, Store } from 'lucide-react'
 
 const phases = [
-  { icon: PenTool,      title: 'Diseno UI/UX',           weeks: 'Semana 1-2', body: 'Wireframes, prototipo en Figma, sistema de diseno y validacion con CAPIDRIVERS.' },
-  { icon: Code2,        title: 'Desarrollo',             weeks: 'Semana 3-7', body: 'App nativa iOS + Android, backend, panel admin y app de conductor.' },
-  { icon: FlaskConical, title: 'Beta cerrada',           weeks: 'Semana 8',   body: 'Pruebas con conductores reales en Barinas. Ajustes de estabilidad y rendimiento.' },
-  { icon: Store,        title: 'Publicacion',            weeks: 'Semana 9',   body: 'Lanzamiento en App Store y Google Play. Campana de marketing de apertura.' }
+  { icon: PenTool,      title: 'Diseno UI/UX',           weeks: 'Semana 1',   body: 'Wireframes, prototipo en Figma, sistema de diseno y validacion con CAPIDRIVERS.' },
+  { icon: Code2,        title: 'Desarrollo',             weeks: 'Semana 2-4', body: 'App nativa iOS + Android, backend, panel admin y app de conductor.' },
+  { icon: FlaskConical, title: 'Beta cerrada',           weeks: 'Semana 5',   body: 'Pruebas con conductores reales en Barinas. Ajustes de estabilidad y rendimiento.' },
+  { icon: Store,        title: 'Publicacion',            weeks: 'Semana 6',   body: 'Lanzamiento en App Store y Google Play. Campana de marketing de apertura.' }
 ]
 
 export default function Roadmap() {
@@ -23,7 +23,7 @@ export default function Roadmap() {
             De la idea <span className="gradient-text">a las tiendas</span>
           </h2>
           <p className="mt-4 text-capi-cream/70 text-lg">
-            En ~9 semanas publicamos la primera version. Entregas quincenales para que puedas ver el progreso en tiempo real.
+            En 6 semanas publicamos la primera version. Entregas semanales para que puedas ver el progreso en tiempo real.
           </p>
         </motion.div>
 

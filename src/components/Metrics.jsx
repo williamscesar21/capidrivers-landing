@@ -59,20 +59,20 @@ export default function Metrics() {
             El impacto esperado en <span className="gradient-text">los primeros 6 meses</span>
           </h2>
           <p className="mt-4 text-capi-cream/70 text-lg">
-            Estimaciones basadas en casos comparables de apps de movilidad en ciudades secundarias de Latam.
+            Metas conservadoras para los primeros 6 meses. No son promesas cerradas: son
+            objetivos que definimos juntos y que podremos medir con el panel administrador.
           </p>
         </motion.div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-5">
-          <Metric icon={TrendingUp} value={40}  prefix="+" suffix="%"  label="Incremento en viajes mensuales" start={inView} />
-          <Metric icon={Timer}      value={60}  prefix="-" suffix="%"  label="Tiempo dedicado a gestion manual" start={inView} />
-          <Metric icon={Star}       value={4.9} decimals={1} suffix="★" label="Satisfaccion proyectada de usuarios" start={inView} />
+          <Metric icon={TrendingUp} value={40}  prefix="+" suffix="%"  label="Meta de incremento en viajes mensuales" start={inView} />
+          <Metric icon={Timer}      value={60}  prefix="-" suffix="%"  label="Reduccion de tiempo en gestion manual" start={inView} />
+          <Metric icon={Star}       value={4.5} decimals={1} suffix="★" label="Calificacion minima objetivo de usuarios" start={inView} />
         </div>
 
         <div className="mt-8 rounded-2xl bg-capi-neon/5 p-5 ring-1 ring-capi-neon/20 text-center">
           <p className="text-sm text-capi-cream/70">
-            "Pasar a una app nativa multiplico nuestras reservas x2.3 en 4 meses." —{' '}
-            <span className="text-capi-neon font-semibold">Testimonio caso comparable</span>
+            Cifras objetivo, no testimonios. Se ajustan en el contrato segun la meta que definamos con CAPIDRIVERS.
           </p>
         </div>
       </div>

@@ -1,61 +1,20 @@
 import { motion } from 'framer-motion'
-import { Check, Zap, Rocket, Crown, ArrowRight } from 'lucide-react'
+import { Check, Crown, ArrowRight, Sparkles } from 'lucide-react'
 
-const plans = [
-  {
-    id: 'starter',
-    icon: Zap,
-    name: 'Starter',
-    tag: 'Para empezar',
-    price: '$2,500',
-    unit: 'pago unico',
-    accent: 'border-white/10',
-    features: [
-      'App iOS + Android (una sola base)',
-      'Login, mapa y solicitud de viaje',
-      'Tarifas configurables',
-      'Pago en efectivo',
-      'Publicacion en App Store + Play',
-      '1 mes de soporte'
-    ]
-  },
-  {
-    id: 'pro',
-    icon: Rocket,
-    name: 'Pro',
-    tag: 'Recomendado',
-    price: '$4,900',
-    unit: 'pago unico',
-    accent: 'ring-2 ring-capi-neon shadow-neon scale-[1.02]',
-    highlighted: true,
-    features: [
-      'Todo lo del plan Starter',
-      'Panel admin web + app conductor',
-      'Pago Movil, Zelle y tarjetas',
-      'Rating bidireccional + SOS',
-      'Notificaciones push personalizadas',
-      'Analytics basicos',
-      '3 meses de soporte'
-    ]
-  },
-  {
-    id: 'enterprise',
-    icon: Crown,
-    name: 'Enterprise',
-    tag: 'Escalamiento',
-    price: 'A medida',
-    unit: 'cotizar',
-    accent: 'border-capi-gold/40',
-    features: [
-      'Todo lo del plan Pro',
-      'Integracion Capishop + Capirosa',
-      'Programa de referidos y cupones',
-      'Dashboard BI completo',
-      'Multi-ciudad y multi-idioma',
-      'SLA 99.9% con soporte 24/7',
-      '12 meses de soporte'
-    ]
-  }
+const features = [
+  'App nativa iOS + Android (una sola base)',
+  'Login, mapa en vivo y solicitud de viaje',
+  'Tarifas configurables y ruta optimizada',
+  'Pagos: efectivo, Pago Movil, Zelle y tarjetas',
+  'Panel administrador web con metricas en vivo',
+  'App dedicada para conductores afiliados',
+  'Notificaciones push personalizadas',
+  'Rating bidireccional + boton SOS',
+  'Programa de referidos y cupones',
+  'Integracion con Capishop y Capirosa',
+  'Publicacion en App Store y Google Play',
+  'Diseno UI/UX con la mascota Capibara',
+  '3 meses de soporte y mantenimiento incluidos'
 ]
 
 export default function Pricing() {
@@ -70,70 +29,77 @@ export default function Pricing() {
         >
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-capi-neon">Inversion</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-black tracking-tight">
-            Elige el plan <span className="gradient-text">que se ajuste a ti</span>
+            Una propuesta. <span className="gradient-text">Todo incluido.</span>
           </h2>
           <p className="mt-4 text-capi-cream/70 text-lg">
-            Tres rutas claras para llevar a CAPIDRIVERS al movil. Todos los planes incluyen
-            diseno UI/UX, desarrollo nativo, pruebas y publicacion en las tiendas.
+            Sin letras chicas, sin planes confusos, sin sorpresas. Un solo paquete con toda
+            la app, el panel administrador y el acompanamiento que CAPIDRIVERS necesita para
+            salir al aire.
           </p>
         </motion.div>
 
-        <div className="mt-12 grid md:grid-cols-3 gap-5">
-          {plans.map((p, i) => (
-            <motion.article
-              key={p.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`relative rounded-2xl bg-capi-dark/60 backdrop-blur p-6 md:p-7 flex flex-col ${p.accent} ${!p.highlighted ? 'border border-white/10' : ''}`}
-            >
-              {p.highlighted && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-capi-neon px-4 py-1 text-xs font-bold uppercase tracking-widest text-capi-deep shadow-neon">
-                  Recomendado
-                </span>
-              )}
+        <motion.article
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.7 }}
+          className="relative mt-14 mx-auto max-w-3xl rounded-3xl bg-capi-dark/60 backdrop-blur p-8 md:p-12 ring-2 ring-capi-neon shadow-[0_0_80px_rgba(0,230,118,0.35)] overflow-hidden"
+        >
+          {/* Glow decorations */}
+          <div className="pointer-events-none absolute -top-40 -right-40 h-80 w-80 rounded-full bg-capi-neon/20 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-capi-primary/15 blur-3xl" />
 
+          <div className="relative">
+            <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${p.highlighted ? 'bg-capi-neon text-capi-deep' : 'bg-capi-neon/10 text-capi-neon ring-1 ring-capi-neon/30'}`}>
-                  <p.icon className="h-6 w-6" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-capi-neon text-capi-deep shadow-neon">
+                  <Crown className="h-7 w-7" />
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl font-black text-capi-cream">{p.name}</h3>
-                  <p className="text-xs text-capi-cream/60">{p.tag}</p>
+                  <h3 className="font-display text-3xl font-black text-capi-cream">Plan Integral</h3>
+                  <p className="text-xs text-capi-cream/60 uppercase tracking-widest">Todo incluido · Pago unico</p>
                 </div>
               </div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-capi-gold/15 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-capi-gold ring-1 ring-capi-gold/40">
+                <Sparkles className="h-3.5 w-3.5" />
+                Oferta de lanzamiento
+              </span>
+            </div>
 
-              <div className="mt-6">
-                <p className="font-display text-4xl font-black text-capi-cream">{p.price}</p>
-                <p className="text-xs text-capi-cream/60">{p.unit}</p>
-              </div>
+            <div className="mt-8 flex items-end gap-3">
+              <p className="font-display text-7xl md:text-8xl font-black gradient-text leading-none">$2,500</p>
+              <p className="pb-2 text-sm text-capi-cream/70">USD<br />pago unico</p>
+            </div>
 
-              <ul className="mt-6 space-y-3 flex-1">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-capi-cream/85">
-                    <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-capi-neon" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
+            <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
+              {features.map((f) => (
+                <li key={f} className="flex items-start gap-2.5 text-sm text-capi-cream/90">
+                  <div className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-capi-neon/20 ring-1 ring-capi-neon/50">
+                    <Check className="h-3 w-3 text-capi-neon" strokeWidth={3} />
+                  </div>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
 
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
-                href="#contacto"
-                className={`mt-7 inline-flex items-center justify-center gap-2 rounded-full py-3 font-semibold transition-all ${
-                  p.highlighted
-                    ? 'bg-capi-neon text-capi-deep shadow-neon hover:shadow-neon-lg hover:scale-105'
-                    : 'border border-capi-neon/40 text-capi-neon hover:bg-capi-neon/10'
-                }`}
+                href="https://wa.me/584245650990?text=Hola%20CAPIDRIVERS%2C%20quiero%20cerrar%20la%20propuesta%20de%20la%20app%20por%20%242%2C500."
+                target="_blank"
+                rel="noreferrer"
+                className="btn-neon flex-1 sm:flex-none"
               >
-                Comenzar <ArrowRight className="h-4 w-4" />
+                Cerrar propuesta <ArrowRight className="h-4 w-4" />
               </a>
-            </motion.article>
-          ))}
-        </div>
+              <p className="text-xs text-capi-cream/60">
+                Entrega en 6 semanas · Contrato firmado con alcance y cronograma detallado
+              </p>
+            </div>
+          </div>
+        </motion.article>
 
         <p className="mt-8 text-center text-xs text-capi-cream/50">
-          Los montos son referenciales. Se firma contrato con alcance, entregables y cronograma detallado.
+          Pago 50% al firmar contrato, 50% al publicar en tiendas.
         </p>
       </div>
     </section>
